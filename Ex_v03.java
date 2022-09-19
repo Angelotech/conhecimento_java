@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Ex_v03 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int[] vetora = new int[15];
+        int[] vetorb = new int[15];
+            
+        for(int c = 0; c <vetora.length; c++ ){
+            System.out.print("pfv digite o vetor: ");
+            vetora[c] = input.nextInt();
+            vetorb[c] = vetora[c] * c;
+            
+        }
+        for(int i = 0; i<vetora.length; i++){
+            System.out.print(" " + vetorb[i]);
+
+
+        }input.close();
+       
+    }
+}
